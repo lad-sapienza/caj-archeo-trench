@@ -146,11 +146,11 @@
   </elevation>
   <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="RuleRenderer">
     <rules key="{9b8c51a1-2b67-42f1-9ee2-3810398e5743}">
-      <rule filter=" &quot;material&quot; =  'stone' &#xa; AND&#xa; &quot;context&quot; =&#xa; regexp_substr( @layer_name, 'BA-[0-9]{1,3}|B[0-9]{1,3}|[0-9]{1,3}')" key="{f66235cb-97b0-4ab6-a064-935c78189239}" label="Stone" symbol="0"/>
-      <rule filter=" &quot;material&quot; =  'bone' AND&#xa; &quot;context&quot; =&#xa; regexp_substr( @layer_name, 'BA-[0-9]{1,3}|B[0-9]{1,3}|[0-9]{1,3}')" key="{39cad8bb-69b7-4b89-8c87-2b9c12e6aed7}" label="Bones" symbol="1"/>
-      <rule filter=" &quot;material&quot;  =  'earth'  AND&#xa; &quot;context&quot; =&#xa; regexp_substr( @layer_name, 'BA-[0-9]{1,3}|B[0-9]{1,3}|[0-9]{1,3}')" key="{8632ebab-2d38-49cb-8b56-ca9cf7e608f8}" label="Earth" symbol="2"/>
-      <rule filter=" &quot;material&quot; =  'pottery'  AND&#xa; &quot;context&quot; =&#xa; regexp_substr( @layer_name, 'BA-[0-9]{1,3}|B[0-9]{1,3}|[0-9]{1,3}')" key="{d4543680-2a8d-4d91-bcc9-43e7acb0baa9}" label="Pottery" symbol="3"/>
-      <rule filter=" &quot;material&quot; =  'tile' AND&#xa; &quot;context&quot; =&#xa; regexp_substr( @layer_name, 'BA-[0-9]{1,3}|B[0-9]{1,3}|[0-9]{1,3}')" key="{2da9b820-6a3a-450d-97dc-6f9567bd2de8}" label="Tile" symbol="4"/>
+      <rule filter=" &quot;material&quot; =  'stone'" key="{f66235cb-97b0-4ab6-a064-935c78189239}" label="Stone" symbol="0"/>
+      <rule filter=" &quot;material&quot; =  'bone'" key="{39cad8bb-69b7-4b89-8c87-2b9c12e6aed7}" label="Bones" symbol="1"/>
+      <rule filter=" &quot;material&quot;  =  'earth'" key="{8632ebab-2d38-49cb-8b56-ca9cf7e608f8}" label="Earth" symbol="2"/>
+      <rule filter=" &quot;material&quot; =  'pottery'" key="{d4543680-2a8d-4d91-bcc9-43e7acb0baa9}" label="Pottery" symbol="3"/>
+      <rule filter=" &quot;material&quot; =  'tile'" key="{2da9b820-6a3a-450d-97dc-6f9567bd2de8}" label="Tile" symbol="4"/>
       <rule checkstate="0" filter="ELSE" key="{818103a0-c737-4f97-b4e5-e731142687d2}" symbol="5"/>
     </rules>
     <symbols>

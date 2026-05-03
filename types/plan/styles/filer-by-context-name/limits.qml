@@ -281,8 +281,8 @@
   <customproperties>
     <Option type="Map">
       <Option name="embeddedWidgets/count" type="int" value="0"/>
-      <Option name="variableNames" type="invalid"/>
-      <Option name="variableValues" type="invalid"/>
+      <Option name="variableNames"/>
+      <Option name="variableValues"/>
     </Option>
   </customproperties>
   <blendMode>0</blendMode>
