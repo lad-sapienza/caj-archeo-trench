@@ -151,7 +151,7 @@
       <rule filter=" &quot;material&quot;  =  'earth'" key="{8632ebab-2d38-49cb-8b56-ca9cf7e608f8}" label="Earth" symbol="2"/>
       <rule filter=" &quot;material&quot; =  'pottery'" key="{d4543680-2a8d-4d91-bcc9-43e7acb0baa9}" label="Pottery" symbol="3"/>
       <rule filter=" &quot;material&quot; =  'tile'" key="{2da9b820-6a3a-450d-97dc-6f9567bd2de8}" label="Tile" symbol="4"/>
-      <rule checkstate="0" filter="ELSE" key="{818103a0-c737-4f97-b4e5-e731142687d2}" symbol="5"/>
+      <rule filter="ELSE" key="{818103a0-c737-4f97-b4e5-e731142687d2}" symbol="5"/>
     </rules>
     <symbols>
       <symbol alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="0" type="fill">
@@ -389,7 +389,9 @@
     <Option type="Map">
       <Option name="dualview/previewExpressions" type="List">
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
+        <Option type="QString" value=""/>
         <Option type="QString" value="&quot;material&quot;"/>
+        <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="invalid"/>
       </Option>
       <Option name="embeddedWidgets/count" type="int" value="0"/>
@@ -479,7 +481,7 @@
   <referencingLayers/>
   <fieldConfiguration>
     <field configurationFlags="NoFlag" name="fid">
-      <editWidget type="TextEdit">
+      <editWidget type="Hidden">
         <config>
           <Option/>
         </config>
@@ -488,7 +490,10 @@
     <field configurationFlags="NoFlag" name="context">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -513,7 +518,7 @@
                 <Option name="bone" type="QString" value="bone"/>
               </Option>
               <Option type="Map">
-                <Option name="" type="invalid"/>
+                <Option name="" type="QString" value=""/>
               </Option>
             </Option>
           </Option>
@@ -594,7 +599,7 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="trench"/>
   </labelOnTop>
   <reuseLastValuePolicy>
-    <field name="context" reuseLastValuePolicy="NotAllowed"/>
+    <field name="context" reuseLastValuePolicy="AllowedDefaultOn"/>
     <field name="fid" reuseLastValuePolicy="NotAllowed"/>
     <field name="material" reuseLastValuePolicy="AllowedDefaultOn"/>
     <field name="trench" reuseLastValuePolicy="NotAllowed"/>

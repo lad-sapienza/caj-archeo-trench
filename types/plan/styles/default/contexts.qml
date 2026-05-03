@@ -649,7 +649,7 @@
   <referencingLayers/>
   <fieldConfiguration>
     <field configurationFlags="NoFlag" name="fid">
-      <editWidget type="TextEdit">
+      <editWidget type="Hidden">
         <config>
           <Option/>
         </config>
@@ -683,7 +683,7 @@
                 <Option name="bedrock" type="QString" value="bedrock"/>
               </Option>
               <Option type="Map">
-                <Option name="" type="invalid"/>
+                <Option name="" type="QString" value=""/>
               </Option>
             </Option>
           </Option>
@@ -762,8 +762,8 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="fid"/>
   </labelOnTop>
   <reuseLastValuePolicy>
-    <field name="context" reuseLastValuePolicy="NotAllowed"/>
-    <field name="context_type" reuseLastValuePolicy="NotAllowed"/>
+    <field name="context" reuseLastValuePolicy="AllowedDefaultOn"/>
+    <field name="context_type" reuseLastValuePolicy="AllowedDefaultOn"/>
     <field name="fid" reuseLastValuePolicy="NotAllowed"/>
   </reuseLastValuePolicy>
   <dataDefinedFieldProperties/>
