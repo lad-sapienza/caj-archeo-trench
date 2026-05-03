@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# QGIS lock files
+*.qgs~
+*.qgz~
+
+# Plugin config (local only)
+config.json
