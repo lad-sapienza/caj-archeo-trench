@@ -295,14 +295,16 @@
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="QString" value=""/>
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
+        <Option type="QString" value=""/>
         <Option type="QString" value="&quot;material&quot;"/>
+        <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="QString" value=""/>
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="invalid"/>
       </Option>
       <Option name="embeddedWidgets/count" type="int" value="0"/>
-      <Option name="variableNames"/>
-      <Option name="variableValues"/>
+      <Option name="variableNames" type="invalid"/>
+      <Option name="variableValues" type="invalid"/>
     </Option>
   </customproperties>
   <blendMode>0</blendMode>
@@ -378,7 +380,7 @@
       <Option name="QgsGeometryGapCheck" type="Map">
         <Option name="allowedGapsBuffer" type="double" value="0"/>
         <Option name="allowedGapsEnabled" type="bool" value="false"/>
-        <Option name="allowedGapsLayer" type="QString" value=""/>
+        <Option name="allowedGapsLayer" type="invalid"/>
       </Option>
     </checkConfiguration>
   </geometryOptions>

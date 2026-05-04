@@ -170,7 +170,7 @@
             <Option name="offset_unit" type="QString" value="MM"/>
             <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.1372549,0.1372549,0.1372549,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.26"/>
+            <Option name="outline_width" type="QString" value="0.3"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
@@ -201,7 +201,7 @@
             <Option name="offset_unit" type="QString" value="MM"/>
             <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.1372549,0.1372549,0.1372549,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.26"/>
+            <Option name="outline_width" type="QString" value="0.3"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
@@ -311,7 +311,7 @@
             <Option name="offset_unit" type="QString" value="MM"/>
             <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.1372549,0.1372549,0.1372549,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.26"/>
+            <Option name="outline_width" type="QString" value="0.3"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
@@ -581,8 +581,8 @@
         <Option type="QString" value="US"/>
       </Option>
       <Option name="embeddedWidgets/count" type="int" value="0"/>
-      <Option name="variableNames"/>
-      <Option name="variableValues"/>
+      <Option name="variableNames" type="invalid"/>
+      <Option name="variableValues" type="invalid"/>
     </Option>
   </customproperties>
   <blendMode>0</blendMode>
@@ -658,7 +658,7 @@
       <Option name="QgsGeometryGapCheck" type="Map">
         <Option name="allowedGapsBuffer" type="double" value="0"/>
         <Option name="allowedGapsEnabled" type="bool" value="false"/>
-        <Option name="allowedGapsLayer" type="QString" value=""/>
+        <Option name="allowedGapsLayer" type="invalid"/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
