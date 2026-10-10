@@ -1,4 +1,4 @@
--- template_version: 2026-05-03
+-- template_version: 2026-10-10
 
 -- layer: contexts
 -- geometry: POLYGON
@@ -15,7 +15,8 @@ CREATE TABLE contexts (
 -- geometry_column: geom
 CREATE TABLE detail (
     context TEXT(30),
-    material TEXT(255)
+    material TEXT(255),
+    measures_cm TEXT
 );
 
 -- layer: elev_change

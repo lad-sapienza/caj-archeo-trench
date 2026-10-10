@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis autoRefreshMode="Disabled" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" layerType="Vector" maxScale="0" minScale="100000000" readOnly="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" version="4.0.1-Norrköping">
+<qgis autoRefreshMode="Disabled" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" layerType="Vector" maxScale="0" minScale="100000000" readOnly="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" version="4.2.3-Belém do Pará">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -390,7 +390,11 @@
       <Option name="dualview/previewExpressions" type="List">
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="QString" value=""/>
-        <Option type="QString" value="&quot;material&quot;"/>
+        <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
+        <Option type="QString" value=""/>
+        <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
+        <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
+        <Option type="QString" value=""/>
         <Option type="QString" value="COALESCE( &quot;material&quot;, '&lt;NULL>' )"/>
         <Option type="invalid"/>
       </Option>
@@ -404,7 +408,7 @@
   <layerOpacity>1</layerOpacity>
   <LinearlyInterpolatedDiagramRenderer attributeLegend="1" classificationAttributeExpression="" diagramType="Histogram" lowerHeight="0" lowerValue="0" lowerWidth="0" upperHeight="5" upperValue="0" upperWidth="5">
     <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="0" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="5" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" stackedDiagramMode="Horizontal" stackedDiagramSpacing="0" stackedDiagramSpacingUnit="MM" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" width="15">
-      <fontProperties bold="0" description=".AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1" italic="0" strikethrough="0" style="" underline="0"/>
+      <fontProperties bold="0" description=".AppleSystemUIFont,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0" italic="0" strikethrough="0" style="" underline="0"/>
       <attribute color="#000000" colorOpacity="1" field="" label=""/>
       <axisSymbol>
         <symbol alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" type="line">
@@ -480,14 +484,14 @@
   <referencedLayers/>
   <referencingLayers/>
   <fieldConfiguration>
-    <field configurationFlags="NoFlag" name="fid">
+    <field configurationFlags="0" name="fid">
       <editWidget type="Hidden">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="NoFlag" name="context">
+    <field configurationFlags="0" name="context">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -497,7 +501,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="NoFlag" name="material">
+    <field configurationFlags="0" name="material">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -518,10 +522,17 @@
                 <Option name="bone" type="QString" value="bone"/>
               </Option>
               <Option type="Map">
-                <Option name="" type="QString" value=""/>
+                <Option name="" type="invalid"/>
               </Option>
             </Option>
           </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="0" name="measures_cm">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
         </config>
       </editWidget>
     </field>
@@ -530,21 +541,25 @@
     <alias field="fid" index="0" name=""/>
     <alias field="context" index="1" name=""/>
     <alias field="material" index="2" name=""/>
+    <alias field="measures_cm" index="3" name=""/>
   </aliases>
   <defaults>
     <default applyOnUpdate="0" expression="" field="fid"/>
     <default applyOnUpdate="0" expression="" field="context"/>
     <default applyOnUpdate="0" expression="" field="material"/>
+    <default applyOnUpdate="0" expression="" field="measures_cm"/>
   </defaults>
   <constraints>
     <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"/>
     <constraint constraints="0" exp_strength="0" field="context" notnull_strength="0" unique_strength="0"/>
     <constraint constraints="0" exp_strength="0" field="material" notnull_strength="0" unique_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="measures_cm" notnull_strength="0" unique_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint desc="" exp="" field="fid"/>
     <constraint desc="" exp="" field="context"/>
     <constraint desc="" exp="" field="material"/>
+    <constraint desc="" exp="" field="measures_cm"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
@@ -555,6 +570,7 @@
       <column hidden="0" name="fid" type="field" width="-1"/>
       <column hidden="0" name="material" type="field" width="-1"/>
       <column hidden="0" name="context" type="field" width="-1"/>
+      <column hidden="0" name="measures_cm" type="field" width="-1"/>
       <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
@@ -590,18 +606,21 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="context"/>
     <field editable="1" name="fid"/>
     <field editable="1" name="material"/>
+    <field editable="1" name="measures_cm"/>
     <field editable="1" name="trench"/>
   </editable>
   <labelOnTop>
     <field labelOnTop="0" name="context"/>
     <field labelOnTop="0" name="fid"/>
     <field labelOnTop="0" name="material"/>
+    <field labelOnTop="0" name="measures_cm"/>
     <field labelOnTop="0" name="trench"/>
   </labelOnTop>
   <reuseLastValuePolicy>
     <field name="context" reuseLastValuePolicy="AllowedDefaultOn"/>
     <field name="fid" reuseLastValuePolicy="NotAllowed"/>
     <field name="material" reuseLastValuePolicy="AllowedDefaultOn"/>
+    <field name="measures_cm" reuseLastValuePolicy="NotAllowed"/>
     <field name="trench" reuseLastValuePolicy="NotAllowed"/>
   </reuseLastValuePolicy>
   <dataDefinedFieldProperties/>
